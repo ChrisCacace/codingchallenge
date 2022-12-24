@@ -1,11 +1,13 @@
+import { Home } from '@web3uikit/icons';
 import { Default } from 'components/layouts/Default';
-import { Home } from 'components/templates/home';
+import { Transactions } from 'components/templates/transactions';
+import { TransferEth } from 'components/templates/transfereth';
 import type { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
   return (
-    <Default pageName="Home">
-      <Home />
+    <Default pageName="Transactions">
+      <Transactions />
     </Default>
   );
 };

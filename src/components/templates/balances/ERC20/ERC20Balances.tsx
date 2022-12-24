@@ -15,7 +15,7 @@ import {
   HStack,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useEvmWalletTokenBalances } from '@moralisweb3/next';
+import { useEvmWalletTokenBalances, useEvmNativeBalance } from '@moralisweb3/next';
 import { useSession } from 'next-auth/react';
 import { useEffect } from 'react';
 import { getEllipsisTxt } from 'utils/format';
@@ -34,7 +34,7 @@ const ERC20Balances = () => {
 
   return (
     <>
-      <Heading size="lg" marginBottom={6}>
+      <Heading size="lg" marginBottom={6}> 
         ERC20 Balances
       </Heading>
       {tokenBalances?.length ? (
